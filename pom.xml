@@ -16,6 +16,7 @@
         <module>custom-spring</module>
     </modules>
 
+    <!-- 由于parent的存在 spring-boot 统一管理了相关依赖和版本 子模块自动会继承 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -27,7 +28,7 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <!-- 依赖管理 需要版本号 -->
+    <!-- 依赖管理 这里面就不需要spring-boot相关配置因为已配置了parent  dependencyManagement管理的依赖需要版本号 -->
     <dependencyManagement>
         <dependencies>
 

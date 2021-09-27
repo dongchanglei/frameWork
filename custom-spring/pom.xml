@@ -18,6 +18,7 @@
     <name>custom-spring</name>
     <description>custom-spring project for Spring Boot</description>
 
+    <!-- 子模块的依赖不需要单独指定版本号 会自动继承父项目的依赖管理 除非是该模块私有引入依赖-->
     <dependencies>
 
         <dependency>
